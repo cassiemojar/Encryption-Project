@@ -1,6 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+background-color: #CBB4B0;
+
+}
+
+
+
 .header {
-    background-color: #04ec10;
+    background-color: #070B34;
     color: white;
-    padding: 20px;
+    padding: 80px;
     text-align: center;
 }
