@@ -2,21 +2,22 @@ import './App.css';
 
 const Header = (props) => {
     return (
-        <header class="header">
-            <div class="title">
-                <p>{props.title}</p>
-            </div>
+        <div className="nav-bar">
+            <header className="header">
+                <div className="title">
+                    <p>{props.title}</p>
+                </div>
 
-
-            <ul class="tabs">
-                <li>
-                    <div class="icon">
-                        <p>Test</p>
-                    </div>
-                </li>
-            </ul>
-
-        </header>
+                <ul className="tabs">
+                    <li>
+                        <button>Sign In</button>
+                    </li>
+                    <li>
+                        <button>Write</button>
+                    </li>
+                </ul>
+            </header>
+        </div>
     )
 }
 
