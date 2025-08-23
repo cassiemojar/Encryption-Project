@@ -10,10 +10,10 @@ const Header = (props) => {
 
                 <ul className="tabs">
                     <li>
-                        <button>Sign In</button>
+                        <button>sign in</button>
                     </li>
                     <li>
-                        <button>Write</button>
+                        <button>write</button>
                     </li>
                 </ul>
             </header>
