@@ -7,7 +7,7 @@ const App = () => {
     // Below is the actual html
     return (
         <div>
-            <Header title="encrypt-it!"/>
+            <Header title="encode-it"/>
         </div>
 
     )
