@@ -32,7 +32,7 @@ body {
 
 /* HEADER CONTAINER */
 .header {
-    background-color: #27244B;
+    background: linear-gradient(to right, #27244B, #523455);
     color: rgb(255, 244, 244);
     padding: 40px 20px;
     /* smaller padding so it looks balanced */
