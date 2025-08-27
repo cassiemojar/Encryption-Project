@@ -13,7 +13,14 @@
 }
 
 body {
-    background-color: #CBB4B0;
+    background-color: #BAB0BA;
+    background-image:
+        linear-gradient(to right, rgb(146, 128, 128) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(146, 128, 128) 1px, transparent 1px),
+        linear-gradient(to right, gray 1px, transparent 1px),
+        linear-gradient(to bottom, gray 1px, transparent 1px);
+
+    background-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px;
 
 }
 
@@ -25,7 +32,7 @@ body {
 
 /* HEADER CONTAINER */
 .header {
-    background-color: #070B34;
+    background-color: #27244B;
     color: rgb(255, 244, 244);
     padding: 40px 20px;
     /* smaller padding so it looks balanced */
@@ -66,9 +73,9 @@ body {
 }
 
 .tabs button {
-    background-color: #CA9D60;
+    background-color: #8D5D54;
     font-family: "Sunflower", sans-serif;
-    font-size: 20px; 
+    font-size: 20px;
     font-style: bold;
     padding: 5px 20px 5px 20px;
     border-radius: 30px;
