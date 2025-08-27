@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './Header';
+import SoulQuote from './SoulQuote';
 
 
 const App = () => {
@@ -8,7 +9,11 @@ const App = () => {
     return (
         <div>
             <Header title="encode-it"/>
+             <SoulQuote quote="“the soul becomes dyed with the color of its thoughts.” - marcus aurnelius"/>
+           
         </div>
+
+        
 
     )
 }
