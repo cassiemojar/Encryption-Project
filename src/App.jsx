@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Header';
 import SoulQuote from './SoulQuote';
+import HomeSecond from './HomeSecond';
 import About from './About';
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
         <div>
             <Header title="encode-it"/>
              <SoulQuote quote="“the soul becomes dyed with the color of its thoughts.” - marcus aurnelius"/>
+             <HomeSecond/>
              <About/>
         </div>
 

@@ -30,17 +30,14 @@ body {
     background-color: #f6f8f6;
 }
 
-/* HEADER CONTAINER */
+/* HEADER */
 .header {
     background: linear-gradient(to right, #27244B, #523455);
     color: rgb(255, 244, 244);
     padding: 40px 20px;
-    /* smaller padding so it looks balanced */
     position: relative;
-    /* allows absolute positioning of buttons */
     display: flex;
     justify-content: center;
-    /* centers the title */
     align-items: center;
 }
 
@@ -51,78 +48,130 @@ body {
     text-align: center;
 }
 
-/* BUTTONS IN TOP RIGHT */
+/* MENU BUTTONS */
 .tabs {
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 40px;
-
     display: flex;
     list-style-type: none;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-
+    gap: 20px;
 }
 
 .tabs li {
-    display: flex;
-    z-index: 2;
-    position: relative;
-    margin: 5px;
+    margin: 0;
 }
 
 .tabs button {
-    background-color: #8D5D54;
+    background: linear-gradient(135deg, #8d6a58, #d4b483); 
     font-family: "Sunflower", sans-serif;
-    font-size: 20px;
-    font-style: bold;
-    padding: 5px 20px 5px 20px;
+    font-size: 18px;
+    padding: 8px 22px;
     border-radius: 30px;
-    color: white;
+    color: #fffdfc;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .tabs button:hover {
-    background-color: #B59D7C;
-    transition: all 1.0s ease;
+    background: linear-gradient(135deg, #d4b483, #8d6a58);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
 /* QUOTE */
-
 .quote {
     font-family: "Swanky and Moo Moo", cursive;
     text-align: center;
-    background-color: #484475;
-    border: 4px solid #776d6d;
-    margin : 50px 30px 50px 30px;
-    padding: 30px 100px 30px 100px;
+    background: linear-gradient(135deg, #7f6fa4, #c2b3d6); /* lilac + soft lavender highlight */
+    border: 2px solid rgba(255,255,255,0.2);
+    margin: 50px 30px;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
 .quote-circle {
-    font-size: 30px;
-    color: #454040;
-    background-color: #D9D9D9;
-    padding: 80px 150px 50px 150px;
+    font-size: 28px;
+    color: #2c2c2c;
+    background: #f7f2e7; 
+    padding: 70px 120px;
     border-radius: 50%;
-    border: 4px solid #776d6d;
+    border: 3px solid rgba(0,0,0,0.2);
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
 .quote-circle button {
-    margin: 50px 100px 5px 100px;
-    background-color: #8a7d45;
+    margin-top: 25px;
+    background: linear-gradient(135deg, #b389f5, #f3e2b8); /* soft lavender + pale yellow for warmth */
     font-family: "Sunflower", sans-serif;
-    font-size: 20px;
-    font-style: bold;
-    padding: 5px 20px 5px 20px;
-    border-radius: 30px;
-    color: white;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 25px;
+    color: #2c1f1b; 
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
+.quote-circle button:hover {
+    background: linear-gradient(135deg, #f3e2b8, #b389f5);
+    transform: scale(1.05);
+}
+
+/* WHY SECTION */
+.about h1{
+    font-family: "Vast Shadow", serif;
+    color: #FFFFFF;
+    font-size: 50px;
+}
 .about {
     text-align: center;
-    background-color: #484475;
-    border: 4px solid #776d6d;
-    
-    padding: 30px 100px 30px 100px;
+    background: linear-gradient(135deg, #7f6fa4, #c2b3d6); /* lilac + soft lavender highlight */
+    border: 2px solid rgba(255,255,255,0.2);
+    text-align: center;
+    padding: 40px 20px;
 }
 
+/* FIRST PARAGRAPH */
+.about .intro {
+    font-family: "Sunflower", sans-serif;
+    font-size: 18px;
+    margin: 20px auto 50px auto;
+    max-width: 700px;
+    color: #2c1f1b;
+}
+
+/* CARDS ROW */
+.cards-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+/* CARD BOXES */
+.card {
+    background-color: #ffffff; 
+    color: #2c1f1b;
+    padding: 30px 20px;
+    width: 250px;
+    min-height: 180px;
+    border-radius: 10px 100px 10px 100px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-family: "Sunflower", sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
