@@ -5,7 +5,7 @@ const SoulQuote = (props) => {
         <div className="quote">
             <div className="quote-circle">
                 <p>{props.quote}</p>
-                <button>sign in</button>
+                <button>journal now</button>
             </div>
         </div>
     )
