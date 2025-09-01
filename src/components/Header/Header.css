@@ -1,0 +1,57 @@
+/*MENU BAR*/
+.nav-bar {
+    max-width: 100%;
+    background-color: #f6f8f6;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(to right, #27244B, #523455);
+    color: rgb(255, 244, 244);
+    padding: 40px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TITLE IN THE CENTER */
+.title p {
+    font-family: "Vast Shadow", serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* MENU BUTTONS */
+.tabs {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.tabs li {
+    margin: 0;
+}
+
+.tabs button {
+    background: linear-gradient(135deg, #8d6a58, #d4b483); 
+    font-family: "Sunflower", sans-serif;
+    font-size: 18px;
+    padding: 8px 22px;
+    border-radius: 30px;
+    color: #fffdfc;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tabs button:hover {
+    background: linear-gradient(135deg, #d4b483, #8d6a58);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+

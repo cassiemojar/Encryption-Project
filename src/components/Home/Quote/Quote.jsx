@@ -1,15 +1,14 @@
-import './App.css';
+import './Quote.css';
 
-const SoulQuote = (props) => {
+const Quote = ({ quote }) => {
     return (
         <div className="quote">
             <div className="quote-circle">
-                <p>{props.quote}</p>
+                <p>{quote}</p>
                 <button>journal now</button>
             </div>
         </div>
     )
 }
 
-
-export default SoulQuote;
+export default Quote;

@@ -1,25 +1,27 @@
 import './App.css';
-import Header from './Header';
-import SoulQuote from './SoulQuote';
-import HomeSecond from './HomeSecond';
-import About from './About';
-import JournalPage from './JournalPage';
+import { useState } from 'react';
+import Home from './pages/Home';
+import Journal from './pages/Journal';
 
 const App = () => {
-    console.log("Still working!")
-    // Below is the actual html
-    return (
-        <div>
-            <Header title="encode-it"/>
-             <SoulQuote quote="“the soul becomes dyed with the color of its thoughts.” - marcus aurnelius"/>
-             <HomeSecond/>
-             <About/>
-             <JournalPage/>
-        </div>
+  const [currentPage, setCurrentPage] = useState('home');
 
-        
+  const renderPage = () => {
+    switch(currentPage) {
+      case 'home':
+        return <Home onNavigate={setCurrentPage} currentPage={currentPage} />;
+      case 'journal':
+        return <Journal onNavigate={setCurrentPage} currentPage={currentPage} />;
+      default:
+        return <Home onNavigate={setCurrentPage} currentPage={currentPage} />;
+    }
+  };
 
-    )
+  return (
+    <div className="App">
+      {renderPage()}
+    </div>
+  );
 }
 
-export default App
+export default App;

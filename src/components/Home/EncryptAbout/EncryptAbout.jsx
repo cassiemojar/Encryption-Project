@@ -1,6 +1,6 @@
-import './App.css';
+import './EncryptAbout.css';
 
-const HomeSecond = (props) => {
+const EncryptAbout = () => {
     return (
         <div className="about">
             <h1>why journal with us?</h1>
@@ -14,14 +14,14 @@ const HomeSecond = (props) => {
                     Rough day? Get your thoughts out and let the page take the weight off your shoulders.
                 </div>
                 <div className="card">
-                    Song lyrics, story ideas, or thoughts you’re not ready to share? Keep them safe in a locked journal, just for you.
+                    Song lyrics, story ideas, or thoughts you're not ready to share? Keep them safe in a locked journal, just for you.
                 </div>
                 <div className="card">
-                    And when you need to vent in the heat of the moment, you’ll always have a secure outlet for your emotions.
+                    And when you need to vent in the heat of the moment, you'll always have a secure outlet for your emotions.
                 </div>
             </div>
         </div>
     );
 }
 
-export default HomeSecond;
+export default EncryptAbout;

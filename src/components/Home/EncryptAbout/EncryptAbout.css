@@ -1,0 +1,53 @@
+/* WHY SECTION */
+.about h1{
+    font-family: "Vast Shadow", serif;
+    color: #FFFFFF;
+    font-size: 50px;
+}
+.about {
+    text-align: center;
+    background: linear-gradient(135deg, #7f6fa4, #c2b3d6); /* lilac + soft lavender highlight */
+    border: 2px solid rgba(255,255,255,0.2);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* FIRST PARAGRAPH */
+.about .intro {
+    font-family: "Sunflower", sans-serif;
+    font-size: 18px;
+    margin: 20px auto 50px auto;
+    max-width: 700px;
+    color: #2c1f1b;
+}
+
+/* CARDS ROW */
+.cards-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+/* CARD BOXES */
+.card {
+    background-color: #ffffff; 
+    color: #2c1f1b;
+    padding: 30px 20px;
+    width: 250px;
+    min-height: 180px;
+    border-radius: 10px 100px 10px 100px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-family: "Sunflower", sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
