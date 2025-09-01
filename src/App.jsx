@@ -3,6 +3,7 @@ import Header from './Header';
 import SoulQuote from './SoulQuote';
 import HomeSecond from './HomeSecond';
 import About from './About';
+import JournalPage from './JournalPage';
 
 const App = () => {
     console.log("Still working!")
@@ -13,6 +14,7 @@ const App = () => {
              <SoulQuote quote="“the soul becomes dyed with the color of its thoughts.” - marcus aurnelius"/>
              <HomeSecond/>
              <About/>
+             <JournalPage/>
         </div>
 
         
