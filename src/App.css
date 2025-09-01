@@ -176,28 +176,8 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
-.journal-section {
-    text-align: center;
-    padding: 40px 20px;
-    margin: 30px;
-}
 
-.journal-section h1 {
-    font-family: "Vast Shadow", serif;
-    color: #2c1f1b;
-    font-size: 50px;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-}
-
-.journal-section .intro {
-    font-family: "Sunflower", sans-serif;
-    font-size: 18px;
-    margin: 0 auto 40px auto;
-    max-width: 700px;
-    color: #2c1f1b;
-}
-
+/* JOURNAL CONTAINER */
 .journal-notebook {
     display: flex;
     max-width: 800px;
@@ -207,6 +187,8 @@ body {
     border-radius: 5px;
 }
 
+
+/* Journal Spine */
 .journal-binding {
     width: 40px;
     background: linear-gradient(to right, #8d6e63, #6d4c41, #8d6e63);
@@ -214,40 +196,21 @@ body {
     position: relative;
 }
 
-.journal-binding:before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    bottom: 10px;
-    left: 5px;
-    right: 5px;
-    background: linear-gradient(to bottom, 
-        transparent 0%, 
-        rgba(255,255,255,0.1) 10%,
-        transparent 20%,
-        transparent 30%,
-        rgba(255,255,255,0.1) 40%,
-        transparent 50%,
-        transparent 60%,
-        rgba(255,255,255,0.1) 70%,
-        transparent 80%,
-        transparent 90%,
-        rgba(255,255,255,0.1) 100%);
-}
 
 .journal-paper {
     flex: 1;
     background-color: #faf5e9;
     background-image: 
-        linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
-        linear-gradient(#eee 0.1em, transparent 0.1em);
+        linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), /* Blue Horizontal Line */
+        linear-gradient(#eeeeee 0.1em, transparent 0.1em); /* Red Line */
     background-size: 100% 1.2em;
     padding: 40px 60px;
     border-radius: 0 5px 5px 0;
     position: relative;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
 }
 
+
+/* Vertical Red Lines */
 .journal-paper:before {
     content: '';
     position: absolute;
@@ -258,6 +221,7 @@ body {
     background: #ff9999;
 }
 
+/* Lighter Area for Typing on Journal */
 .journal-textarea {
     width: 100%;
     padding: 10px 15px 10px 25px;
@@ -274,6 +238,7 @@ body {
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
+/* When Text Area Used, gets rid of shadows */
 .journal-textarea:focus {
     outline: none;
     background: rgba(255,255,255,0.5);
