@@ -1,5 +1,5 @@
 import Header from '../components/Header/Header';
-import JournalPage from '../components/JournalPage/JournalPage';
+import JournalPage from './JournalPage/JournalPage';
 
 const Journal = ({ onNavigate, currentPage }) => {
   return (

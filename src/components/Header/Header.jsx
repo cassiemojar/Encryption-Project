@@ -10,6 +10,8 @@ const Header = ({ title, onNavigate, currentPage }) => {
   const handleHomeClick = () => {
     if (onNavigate) {
       onNavigate('home');
+      console.log("Clicked!");
+      
     }
   };
 
@@ -20,7 +22,7 @@ const Header = ({ title, onNavigate, currentPage }) => {
           <p>{title}</p>
         </div>
 
-        <ul className="tabs">
+        {/* <ul className="tabs">
           <li>
             <button>sign in</button>
           </li>
@@ -29,7 +31,7 @@ const Header = ({ title, onNavigate, currentPage }) => {
               {currentPage === 'journal' ? 'back to home' : 'write'}
             </button>
           </li>
-        </ul>
+        </ul> */}
       </header>
     </div>
   );
